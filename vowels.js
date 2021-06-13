@@ -11,3 +11,13 @@ function vowels(str) {
 }
 
 vowels('Hi There!');
+
+
+
+function vowels(str) {
+  const matchs = str.match(/[aeiou]/gi);
+  return (matchs || []).length;
+  console.log(matchs);
+}
+
+vowels('Hi There!');
