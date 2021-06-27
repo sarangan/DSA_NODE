@@ -13,3 +13,21 @@ function flatDeep(arr, deep = 0){
 }
 const s = flatDeep(arr, 4);
 console.log(s)
+
+
+// function flatDeep(arr, deep = 0){
+// const stack = [...arr];
+//   const res = [];
+  
+//   while(stack.length) {
+//     const s = stack.shift();
+//     if(Array.isArray(s)){
+//       stack.unshift(...s);
+//     }else {
+//       res.push(s)
+//     }
+//   }
+  
+//   return res;
+  
+// }
