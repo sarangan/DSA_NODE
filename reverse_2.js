@@ -16,3 +16,16 @@ function reverse(str){
 
 const s = reverse('Greetings!');
 console.log(s);
+
+
+function reverse(str){
+  let rev = '';
+  for(let i = 0, l = str.length; i < l; i++){
+    rev = str[i] + rev;
+  }
+  
+  return rev;
+}
+
+const s = reverse('Greetings!');
+console.log(s);
