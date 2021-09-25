@@ -1,6 +1,10 @@
 function is_rotation(list1, list2){
   let pointer = 0;
   
+  if(list1.length !== list2.length){
+     return false;
+  }
+  
   for(let i = 0; i < list2.length; i++){
     if(list2[i] === list1[0]){
       pointer = i;
